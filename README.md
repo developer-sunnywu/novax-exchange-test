@@ -22,6 +22,13 @@
 ## High Level Overview
 ![High Level Image](./diagram1.png)
 
+| Component | Description 
+| --------  | -------     
+| Gateway     | Handle authenication and authorization with jwt token and pass it to the backend service
+| Backend   | Provide different APIs
+| Database  | Store for different files path and permission relationship
+| Object storage | Store for actual file content
+
 
 ## Database Schema 
 1. File
@@ -94,7 +101,7 @@ CREATE TABLE file_permission (
 | Delete file/directory | User able to right click the file icon to delete the files
 | View file content | User able to view the files by double clicking the file
 
-## Others/Assumptions
-| Title | Description 
-| --------  | -------    
-| A
+## Assumptions
+| Title 
+| --------  
+| The content cannot be edit real time, only for storage for simplicity
