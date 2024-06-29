@@ -85,9 +85,11 @@ CREATE TABLE file_permission (
     id INT PRIMARY KEY,
     file_id INT,
     permission_id INT,
+    user_id INT,
     FOREIGN KEY (file_id) REFERENCES file(id)
     FOREIGN KEY (permission_id) REFERENCES permission(id),
-    UNIQUE KEY `composite_key` (`file_id`,`permission_id`)
+    FOREIGN KEY (user_id) REFERENCES user(id),
+    UNIQUE KEY `composite_key` (`file_id`,`permission_id`, `user_id`)
 );
 ```
 
