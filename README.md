@@ -20,7 +20,7 @@
 
 
 ## High Level Overview
-1. 
+![High Level Image](./diagram1.png)
 
 
 ## Database Schema 
@@ -86,5 +86,15 @@ CREATE TABLE file_permission (
 
 
 ## Readme for GUI
+| Operation | Description 
+| --------  | -------     
+| Login     | With input of username and password, user can login |
+| View the files | After successful login, there is full list of files and folder under home directory |
+| Create file/directory | User able to click the icon of '+' with selected permission to create files under current directory
+| Delete file/directory | User able to right click the file icon to delete the files
+| View file content | User able to view the files by double clicking the file
 
-## Trade off / Potential Improvement
+## Others/Assumptions
+| Title | Description 
+| --------  | -------    
+| A
